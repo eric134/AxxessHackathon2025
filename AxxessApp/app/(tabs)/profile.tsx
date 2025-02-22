@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Button, StyleSheet, Text, Alert, ActivityIndicator, Image } from 'react-native';
+import { View, Button, StyleSheet, Text, Alert, ActivityIndicator, Image, TouchableOpacity} from 'react-native';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { useRouter } from 'expo-router';
@@ -55,6 +55,10 @@ const ProfileScreen = () => {
 
     return (
         <View style={styles.container}>
+             <TouchableOpacity style={styles.settingsButton} onPress={() => Alert.alert('Button pressed')}>
+                <Ionicons name="settings-outline" size = {35} />
+            </TouchableOpacity>
+            
             {loading ? (
                 <ActivityIndicator size="large" color="#0000ff" />
             ) : user ? (
@@ -79,6 +83,11 @@ const ProfileScreen = () => {
 };
 
 const styles = StyleSheet.create({
+    settingsButton: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
+    },
     container: {
         flex: 1,
         justifyContent: 'center',

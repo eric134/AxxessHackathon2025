@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'black',
-        marginTop: 30,
+        marginTop: 15,
+        marginBottom: 15,
         fontWeight:'bold',
         fontSize: 20,
       },

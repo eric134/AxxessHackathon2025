@@ -1,10 +1,12 @@
 import { Text, View, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
+import GoogleForm from '../GoogleForm';
 
 export default function Survey() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Survey screen</Text>
+      <GoogleForm />
     </View>
   );
 }
@@ -12,7 +14,7 @@ export default function Survey() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#F5F5DC',
+      backgroundColor: '#ffeef9',
       justifyContent: 'center',
       alignItems: 'center',
     },

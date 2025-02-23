@@ -5,19 +5,14 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: 'salmon',
-      }}
-    >
-      {/* Home Screen */}
-      <Tabs.Screen 
-        name="index" 
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
-          ),
-        }} 
-      />
+        tabBarActiveTintColor: 'crimson',
+      }} >
+      <Tabs.Screen name="index" options={{
+        title: 'Home',
+        tabBarIcon: ({ color, focused}) => (
+          <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
+        )
+       }} />
 
       {/* Survey Screen */}
       <Tabs.Screen 

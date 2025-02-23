@@ -22,9 +22,9 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5DC",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#feeff9',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingVertical: 20,
   },
   welcomeText: {

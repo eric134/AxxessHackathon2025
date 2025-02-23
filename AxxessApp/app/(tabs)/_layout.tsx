@@ -14,7 +14,6 @@ export default function TabLayout() {
         )
        }} />
 
-      {/* Survey Screen */}
       <Tabs.Screen 
         name="survey" 
         options={{
@@ -25,7 +24,6 @@ export default function TabLayout() {
         }} 
       />
 
-      {/* Chat Screen */}
       <Tabs.Screen 
         name="chat" 
         options={{
@@ -36,7 +34,6 @@ export default function TabLayout() {
         }} 
       />
 
-      {/* Profile Screen (Google Authentication) */}
       <Tabs.Screen 
         name="profile" 
         options={{

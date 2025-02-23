@@ -12,7 +12,7 @@ export default function Chat() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#F5F5DC',
+      backgroundColor: '#ffeef9',
       justifyContent: 'center',
       alignItems: 'center',
     },

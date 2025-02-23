@@ -12,7 +12,7 @@ const ProfileScreen = () => {
     const [loading, setLoading] = useState(false);
 
     const [request, response, promptAsync] = Google.useAuthRequest({
-        webClientId: '367397364215-usamnuuk0vrtenueq1apmic8tt30ecmj.apps.googleusercontent.com', // ✅ Google OAuth Client ID
+        webClientId: '367397364215-usamnuuk0vrtenueq1apmic8tt30ecmj.apps.googleusercontent.com', 
     });
 
     useEffect(() => {

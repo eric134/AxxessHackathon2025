@@ -15,7 +15,7 @@ export default function Index() {
       }>Welcome!</Text>
 
 <Text style={{
-      color: 'salmon',
+      color: 'crimson',
       fontSize: 25,
       flex: 1,
       marginTop: 60,
@@ -46,7 +46,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5DC',
+    backgroundColor: '#feeff9',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingVertical: 20,

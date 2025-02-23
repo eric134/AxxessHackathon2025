@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Text, View, StyleSheet} from "react-native";
 import {Link} from 'expo-router';
 import { CurrentRenderContext } from "@react-navigation/native";
@@ -40,12 +41,30 @@ export default function Index() {
         </Link>
       </button>
       </View>
+=======
+import { Text, View, StyleSheet } from "react-native";
+import { Link } from 'expo-router';
+
+export default function Index() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Welcome Jazmin!</Text>
+      <Link href="/profile" style={styles.button}>
+        Go to profile screen
+      </Link>
+    </View>
+>>>>>>> a408754e7e97ad60cc0fd63ccb7c9fddf974a377
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+<<<<<<< HEAD
     backgroundColor: '#F5F5DC',
+=======
+    backgroundColor: '#111111',
+>>>>>>> a408754e7e97ad60cc0fd63ccb7c9fddf974a377
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingVertical: 20,

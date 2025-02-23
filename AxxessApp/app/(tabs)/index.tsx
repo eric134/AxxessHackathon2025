@@ -1,62 +1,53 @@
-import { Text, View, StyleSheet} from "react-native";
-import {Link} from 'expo-router';
-import { CurrentRenderContext } from "@react-navigation/native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { Link } from "expo-router";
 
 export default function Index() {
   return (
-    <View
-    style={styles.container }>
-  <Text style={{
-      color: 'black',
-      fontSize: 25,
-      position: 'absolute',
-      top: 20,
-      }
-      }>Welcome!</Text>
+    <View style={styles.container}>
+      <Text style={styles.welcomeText}>Welcome!</Text>
 
-<Text style={{
-      color: 'salmon',
-      fontSize: 25,
-      flex: 1,
-      marginTop: 60,
-      textAlign: 'center',
-      }
-      }>Track, share, & care{'\n'}with your daily checkup</Text>
+      <Text style={styles.description}>
+        Track, share, & care{"\n"}with your daily checkup
+      </Text>
 
-      <button
-      style={{
-        backgroundColor: 'pink',
-        color: 'white',
-        padding: '10px 20px',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        position: 'absolute',
-        bottom: 20,
-      }}
-    >
-        <Link href="/survey" style={styles.button}>
-        Go to daily survey
+      <TouchableOpacity style={styles.button}>
+        <Link href="/survey" style={styles.buttonText}>
+          Go to daily survey
         </Link>
-      </button>
-      </View>
+      </TouchableOpacity>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5DC',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    backgroundColor: "#F5F5DC",
+    alignItems: "center",
+    justifyContent: "center",
     paddingVertical: 20,
   },
-  text: {
-    color: 'crimson',
+  welcomeText: {
+    color: "black",
     fontSize: 25,
+    position: "absolute",
+    top: 50,
+  },
+  description: {
+    color: "salmon",
+    fontSize: 25,
+    textAlign: "center",
+    marginBottom: 50,
   },
   button: {
+    backgroundColor: "pink",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginTop: 20,
+  },
+  buttonText: {
     fontSize: 20,
-    color: '#000',
+    color: "white",
   },
 });

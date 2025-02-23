@@ -1,10 +1,12 @@
 import { Text, View, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
+import ChatBot from '../chatbot';
 
 export default function Chat() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Ask any health questions!</Text>
+      <ChatBot />
     </View>
   );
 }

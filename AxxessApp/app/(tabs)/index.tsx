@@ -21,7 +21,7 @@ export default function Index() {
       marginTop: 60,
       textAlign: 'center',
       }
-      }>Track, share, & care{'\n'}with check your daily checkup</Text>
+      }>Track, share, & care{'\n'}with your daily checkup</Text>
 
       <button
       style={{

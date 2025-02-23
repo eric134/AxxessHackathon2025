@@ -4,7 +4,7 @@ import { Link } from 'expo-router';
 export default function Chat() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Chat screen</Text>
+      <Text style={styles.text}>Ask any health questions!</Text>
     </View>
   );
 }
@@ -13,10 +13,13 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#ffeef9',
-      justifyContent: 'center',
+      justifyContent: 'top',
       alignItems: 'center',
     },
     text: {
-        color: '#fff',
+        color: 'black',
+        marginTop: 30,
+        fontWeight:'bold',
+        fontSize: 20,
       },
     });

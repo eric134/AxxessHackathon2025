@@ -3,6 +3,7 @@ import { View, Button, StyleSheet, Text, Alert, ActivityIndicator, Image } from 
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { useRouter } from 'expo-router';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 WebBrowser.maybeCompleteAuthSession();
 

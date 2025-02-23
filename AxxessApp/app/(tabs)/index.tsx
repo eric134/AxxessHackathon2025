@@ -1,10 +1,15 @@
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
 import { Link } from "expo-router";
+import Photo from "../photo";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.welcomeText}>Welcome!</Text>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.welcomeText}>Welcome to{"\n"}myCheckUp!</Text>
+
+      <View style={styles.containerPhoto}>
+        <Photo />
+      </View>
 
       <Text style={styles.description}>
         Track, share, & care{"\n"}with your daily checkup
@@ -15,23 +20,28 @@ export default function Index() {
           Go to daily survey
         </Link>
       </TouchableOpacity>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: "#ffeef9",
     alignItems: "center",
     justifyContent: "center",
     paddingVertical: 20,
   },
+  containerPhoto: {
+    marginBottom: 20,
+    marginTop: 20,
+  },
   welcomeText: {
     color: "black",
     fontSize: 25,
-    position: "absolute",
-    top: 50,
+    fontWeight: "bold",
+    marginBottom: 5,
+    marginTop: 30,
   },
   description: {
     color: "crimson",
@@ -44,7 +54,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom: 20,
   },
   buttonText: {
     fontSize: 20,

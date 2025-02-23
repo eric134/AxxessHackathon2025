@@ -5,7 +5,6 @@ import GoogleForm from '../GoogleForm';
 export default function Survey() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Survey screen</Text>
       <GoogleForm />
     </View>
   );

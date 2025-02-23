@@ -27,7 +27,6 @@ const ProfileScreen = () => {
         }
     }, [response]);
 
-    // ✅ Fetch User Profile Data from Google API
     const fetchUserData = async (token: string | undefined) => {
         if (!token) return;
 
@@ -83,7 +82,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5F5DC',
+        backgroundColor: '#ffeef9',
     },
     title: {
         fontSize: 24,

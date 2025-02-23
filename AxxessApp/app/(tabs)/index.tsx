@@ -22,7 +22,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5F5DC",
+    backgroundColor: "#ffeef9",
     alignItems: "center",
     justifyContent: "center",
     paddingVertical: 20,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     top: 50,
   },
   description: {
-    color: "salmon",
+    color: "crimson",
     fontSize: 25,
     textAlign: "center",
     marginBottom: 50,
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 20,
-    color: "white",
+    color: "black",
   },
 });
